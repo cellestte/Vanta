@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vanta - A KoGaMa Theme
 // @namespace    discord/@angelstreatment
-// @version      1.0
+// @version      1.1
 // @description  A gentle bright theme in dreams of summer sunset.
 // @author       strayqt (simon)
 // @match        *://www.kogama.com/*
@@ -52,18 +52,6 @@
     const goldCubeItem = document.querySelector("li._3WhKY._18cmu");
     if (goldCubeItem) {
       goldCubeItem.style.display = "none";
-    }
-    const buttonItem = document.querySelector(
-      "li._3WhKY button.MuiIconButton-root"
-    );
-    if (buttonItem) {
-      GM_addStyle(`
-                    li._3WhKY button.MuiIconButton-root {
-                        position: relative;
-                        left: -3px;
-                        top: 3px;
-                    }
-                `);
     }
   }
 
@@ -148,7 +136,7 @@ const injectCss = (id, css) => {
         ._1z4jM {
         display: none !important;
         }
-        ._1q4mD ._1sUGu ._3hI0M ._3WhKY.jdoNW a {
+        ._1q4mD ._1sUGu ._3hI0M .jdoNW a {
         display: none !important;
         }
         .UA3TP ._3tYRU, .UA3TP rect {
@@ -183,10 +171,8 @@ const injectCss = (id, css) => {
         position: relative !important;
         bottom: 15px;
         }
-        .css-1kkz1bb {
-        display: none !important;
-        }
-        ._1q4mD ._1sUGu ._3hI0M ._3WhKY._18cmu, .css-rebkop {
+
+        ._1q4mD ._1sUGu ._3hI0M ._18cmu, .css-rebkop {
         opacity: 0.1;
         transition: opacity ease-in-out 0.7s;
         }
@@ -206,14 +192,14 @@ const injectCss = (id, css) => {
         position: fixed !important;
         right: -192px !important;
         background-color: var(--reactpanels) !important;
-        width: 250px !important;
+        width: 450px !important;
         transition: all 0.8s ease-in-out !important;
         opacity: 0 !important;
         }
 
         ._3TORb:hover {
         opacity: 1 !important;
-        right: 0px !important;
+        right: 2px !important;
         }
 
         ._3TORb:not(:hover) {
@@ -351,6 +337,12 @@ const injectCss = (id, css) => {
         }
         .css-16fidy5:hover,, .css-qr6c39:hover, .css-cisn0m:hover, .css-fw2tbd:hover, .css-rqc8s9:hover {
         background-color: var(--focusreactpanels) !important;
+        }
+        .j4PNr {
+        background-color: var(--reactpanels) !important;
+        }
+        .j4PNr ._38CK4 .Rj_QH, .j4PNr ._38CK4 ._341Kw {
+        display: none !important;
         }
     `);
 })();
