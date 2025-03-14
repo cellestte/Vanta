@@ -14,5 +14,3 @@ And then pure CSS with lots of subtle but dynamic feel.
 ![image](https://github.com/user-attachments/assets/7aef5257-e96f-42d4-b514-ce9ae0006a91)
 
 
-[View video preview](https://youtu.be/h0gC4TJQx4s )
-
